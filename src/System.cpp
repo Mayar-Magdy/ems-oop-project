@@ -298,9 +298,9 @@ void System::display_doctor_menu(Doctor* doctor)
 void System::generate_dummy_data()
 {
 
-    Doctor* new_user = new Doctor(users.size(),"mai", "0000", "mai magdy", "mai@ems.com");
+    Doctor* new_user = new Doctor(users.size(),"mai", "0000", "mai", "mai@ems.com");
     users.push_back(new_user);
-    Student* new_user1 = new Student(users.size(),"ola", "0000", "ola magdy", "ola@ems.com");
+    Student* new_user1 = new Student(users.size(),"ola", "0000", "ola", "ola@ems.com");
     users.push_back(new_user1);
 
 
@@ -312,3 +312,6 @@ System::~System()
 {
     //dtor
 }
+
+
+

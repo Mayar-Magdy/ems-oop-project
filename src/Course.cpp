@@ -66,7 +66,7 @@ void Course::viewCourse(int student_id)
     }
 
 };
-void Course::view_Course_assignments()
+int Course::view_Course_assignments()
 {
     if(assignments.size())
     {
@@ -78,9 +78,11 @@ void Course::view_Course_assignments()
 
         }
         cout<<"Which ith [ 1 -"<<assignments.size()<<"] ?";
+        return 1;
 
     }
-    else cout<<"This Course has not assignments yet!\n";
+    else {cout<<"This Course has not assignments yet!\n"; return 0;}
+
 
 };
 

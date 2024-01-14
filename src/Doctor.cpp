@@ -39,10 +39,11 @@ void  Doctor::set_assignment()
         string code, content;
         int grade;
         cout << "Code: " ;
-        cin>>code;
+        getline(cin, code);
+       cin.ignore(numeric_limits<streamsize>::max(),'\n');
         cout << "Content: " ;
-        cin >> content;
-        cout << "Grade: " ;
+      getline(cin, content);
+            cout << "Grade: " ;
         cin>>grade;
         Assignment *as= new Assignment(content,grade);
         for(int i=0; i< int (my_courses.size()); ++i)
@@ -80,9 +81,10 @@ void Doctor::set_grades()
         int current_courses;
         cin>>current_courses;
         //view assignment
-        my_courses[current_courses-1]->view_Course_assignments();
+       if( my_courses[current_courses-1]->view_Course_assignments()){
         int assignment_num;
         cin>>assignment_num;
+
         //choose assignment
         Assignment * current_assignment;
         current_assignment=my_courses[current_courses-1]->get_Assignment(assignment_num);
@@ -105,6 +107,8 @@ void Doctor::set_grades()
           current_solution->setGrade(sol_grade);
           current_solution->setFeedback(feedback);
       }
+         else return;
+       }
       else return;
     }
 Doctor::~Doctor()

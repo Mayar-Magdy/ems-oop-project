@@ -25,7 +25,7 @@ public:
     void addStudent(int );
     void removeStudent(int );
     void viewCourse(int );
-    void view_Course_assignments();
+    int view_Course_assignments();
     int  get_num_submitted_assignmet(int );
     int get_total_solution_grades(int );
     int get_total_course_grade();
