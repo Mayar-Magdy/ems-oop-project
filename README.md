@@ -35,4 +35,7 @@ This project is an Educational Management System implemented in C++ utilizing Ob
 - **User Menu:** Displays options based on the user role (Doctor or Student) after signing in.
 - **Logout:** Allows users to logout and return to the main menu.
 
+## Uml digram link
+https://lucid.app/lucidchart/1f3d4426-c933-4bf8-a366-579c323e56e3/edit?viewport_loc=-1627%2C-380%2C1772%2C749%2C0_0&invitationId=inv_bbbf3ed3-5598-49fa-93bc-f14357f2695d
+
 
